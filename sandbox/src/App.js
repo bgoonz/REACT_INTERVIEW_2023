@@ -3,7 +3,7 @@ import Parent from "./components/counter/Parent";
 import { CountContextProvider } from "./context/store";
 import List from "./components/add-remove-list-items/List";
 import FetchComments from "./components/fetch-comments/FetchComments";
-import Users from './components/display-users/Users'
+import Users from "./components/display-users/Users";
 import "./App.css";
 
 function App() {
@@ -17,9 +17,9 @@ function App() {
       <Spacer />
       <List />
       <Spacer />
-          <FetchComments />
-          <Spacer />
-          <Users />
+      <FetchComments />
+      <Spacer />
+      <Users />
     </div>
   );
 }
