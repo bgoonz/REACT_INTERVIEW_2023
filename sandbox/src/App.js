@@ -7,7 +7,7 @@ import Users from "./components/display-users/Users";
 import Toggle from "./components/toggle-show-hide/Toggle";
 import DisplayInput from "./components/display-input-text/DisplayInput";
 import DisableButton from "./components/disable-button/DisableButton";
-
+import ParentComponent from "./components/update-parent-state/ParentComponent";
 import "./App.css";
 
 function App() {
@@ -30,6 +30,8 @@ function App() {
       <DisplayInput />
       <Spacer />
       <DisableButton />
+      <Spacer />
+      <ParentComponent />
     </div>
   );
 }
