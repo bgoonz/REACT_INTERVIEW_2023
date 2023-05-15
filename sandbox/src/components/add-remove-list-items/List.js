@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 
 function List() {
-    const [ list, setList ] = useState( [] )
-    const [input,setInput]=useState('')
+  const [list, setList] = useState([]);
+  const [input, setInput] = useState("");
 
-    const submitHandler=() => {
-    setList([...list,input])
-}
-    const changeHandler = (event) => {
-        setInput(event.target.value)
-    }
-    const deleteHandler = (element) => {
-      setList(list.filter((ele)=>ele !== element))
-    }
-    
+  const submitHandler = () => {
+    setList([...list, input]);
+  };
+  const changeHandler = (event) => {
+    setInput(event.target.value);
+  };
+  const deleteHandler = (element) => {
+    setList(list.filter((ele) => ele !== element));
+  };
+
   return (
     <div>
       <input onChange={changeHandler}></input>

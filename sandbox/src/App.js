@@ -7,14 +7,14 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-          <h1>React Interview Challenges</h1>
-          <Spacer />
-            <CountContextProvider>
-              <Parent />
-            </CountContextProvider>
-          <Spacer />
-          <List />
-          <Spacer />
+      <h1>React Interview Challenges</h1>
+      <Spacer />
+      <CountContextProvider>
+        <Parent />
+      </CountContextProvider>
+      <Spacer />
+      <List />
+      <Spacer />
     </div>
   );
 }

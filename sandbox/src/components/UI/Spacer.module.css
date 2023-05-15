@@ -1,9 +1,8 @@
 hr {
-    height: 3px;
-    /* Set the desired thickness */
-    background-color: black;
-    /* Set the desired color */
-    border: none;
-    /* Remove the default border */
+  height: 3px;
+  /* Set the desired thickness */
+  background-color: black;
+  /* Set the desired color */
+  border: none;
+  /* Remove the default border */
 }
-
