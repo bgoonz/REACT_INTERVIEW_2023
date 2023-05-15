@@ -6,6 +6,7 @@ import FetchComments from "./components/fetch-comments/FetchComments";
 import Users from "./components/display-users/Users";
 import Toggle from "./components/toggle-show-hide/Toggle";
 import DisplayInput from "./components/display-input-text/DisplayInput";
+import DisableButton from "./components/disable-button/DisableButton";
 
 import "./App.css";
 
@@ -27,6 +28,8 @@ function App() {
       <Toggle />
       <Spacer />
       <DisplayInput />
+      <Spacer />
+      <DisableButton />
     </div>
   );
 }
