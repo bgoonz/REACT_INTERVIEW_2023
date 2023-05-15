@@ -5,6 +5,8 @@ import List from "./components/add-remove-list-items/List";
 import FetchComments from "./components/fetch-comments/FetchComments";
 import Users from "./components/display-users/Users";
 import Toggle from "./components/toggle-show-hide/Toggle";
+import DisplayInput from "./components/display-input-text/DisplayInput";
+
 import "./App.css";
 
 function App() {
@@ -23,6 +25,8 @@ function App() {
       <Users />
       <Spacer />
       <Toggle />
+      <Spacer />
+      <DisplayInput />
     </div>
   );
 }
