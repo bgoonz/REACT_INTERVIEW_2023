@@ -1,14 +1,15 @@
-import Spacer from "./components/UI/Spacer";
-import Parent from "./components/counter/Parent";
-import { CountContextProvider } from "./context/store";
-import List from "./components/add-remove-list-items/List";
-import FetchComments from "./components/fetch-comments/FetchComments";
-import Users from "./components/display-users/Users";
-import Toggle from "./components/toggle-show-hide/Toggle";
-import DisplayInput from "./components/display-input-text/DisplayInput";
-import DisableButton from "./components/disable-button/DisableButton";
-import ParentComponent from "./components/update-parent-state/ParentComponent";
 import "./App.css";
+import Spacer from "./components/UI/Spacer";
+import List from "./components/add-remove-list-items/List";
+import Parent from "./components/counter/Parent";
+import DisableButton from "./components/disable-button/DisableButton";
+import DisplayInput from "./components/display-input-text/DisplayInput";
+import Users from "./components/display-users/Users";
+import FetchComments from "./components/fetch-comments/FetchComments";
+import Sum from "./components/sum-of-numbers/Sum";
+import Toggle from "./components/toggle-show-hide/Toggle";
+import ParentComponent from "./components/update-parent-state/ParentComponent";
+import { CountContextProvider } from "./context/store";
 
 function App() {
   return (
@@ -32,6 +33,8 @@ function App() {
       <DisableButton />
       <Spacer />
       <ParentComponent />
+      <Spacer />
+      <Sum />
     </div>
   );
 }
