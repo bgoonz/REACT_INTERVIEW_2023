@@ -4,6 +4,7 @@ import { CountContextProvider } from "./context/store";
 import List from "./components/add-remove-list-items/List";
 import FetchComments from "./components/fetch-comments/FetchComments";
 import Users from "./components/display-users/Users";
+import Toggle from "./components/toggle-show-hide/Toggle";
 import "./App.css";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <FetchComments />
       <Spacer />
       <Users />
+      <Spacer />
+      <Toggle />
     </div>
   );
 }
