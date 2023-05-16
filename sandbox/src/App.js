@@ -9,7 +9,9 @@ import FetchComments from "./components/fetch-comments/FetchComments";
 import Sum from "./components/sum-of-numbers/Sum";
 import Toggle from "./components/toggle-show-hide/Toggle";
 import ParentComponent from "./components/update-parent-state/ParentComponent";
+import Counter from './components/count-between-one-and-five/Counter'
 import { CountContextProvider } from "./context/store";
+
 
 function App() {
   return (
@@ -35,6 +37,9 @@ function App() {
       <ParentComponent />
       <Spacer />
       <Sum />
+      <Spacer />
+      <Counter />
+      <Spacer />
     </div>
   );
 }
