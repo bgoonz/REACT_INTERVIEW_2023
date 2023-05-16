@@ -1,14 +1,14 @@
 
 
-const SubmitButton = (props) => {
-    
-    
-    return (
-        <>
-            <button type="submit">{ props.text }</button>
-        </>
-    )
-}
+const SubmitButton = ({ onClick, disabled, text }) => {
+  return (
+    <>
+      <button type="submit" onClick={onClick} disabled={disabled}>
+        {text}
+      </button>
+    </>
+  );
+};
 
 
 export default SubmitButton;

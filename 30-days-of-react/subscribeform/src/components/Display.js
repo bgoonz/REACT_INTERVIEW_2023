@@ -1,11 +1,12 @@
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 const Display = () => {
-    // const firstName = useSelector((state)=>{state.})
+ const { firstName, lastName, email } = useSelector((state) => state.form);
   return (
     <div>
-      <p>firstName</p>
-      <p>LastName</p>
-      <p>Email</p>
+      <h3>Form Submission:</h3>
+      <p>First Name: {firstName}</p>
+      <p>Last Name: {lastName}</p>
+      <p>Email: {email}</p>
     </div>
   );
 };
