@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 const Display = () => {
- const { firstName, lastName, email } = useSelector((state) => state.form);
+  const { firstName, lastName, email } = useSelector((state) => state.form);
   return (
     <div>
       <h3>Form Submission:</h3>

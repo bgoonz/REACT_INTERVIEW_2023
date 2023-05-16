@@ -29,13 +29,10 @@ const Form = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-      dispatch( submitForm() );
-          dispatch(resetForm());
-          setButtonDisabled(true);
+    dispatch(submitForm());
+    dispatch(resetForm());
+    setButtonDisabled(true);
   };
-
-
-
 
   return (
     <form onSubmit={handleFormSubmit}>

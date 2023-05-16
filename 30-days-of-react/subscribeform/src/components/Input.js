@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-
+import React, { useState } from "react";
 
 const Input = ({ value, onChange }) => {
   return (
@@ -8,6 +7,5 @@ const Input = ({ value, onChange }) => {
     </div>
   );
 };
-
 
 export default Input;

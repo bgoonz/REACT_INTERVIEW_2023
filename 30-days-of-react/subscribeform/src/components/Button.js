@@ -1,5 +1,3 @@
-
-
 const SubmitButton = ({ onClick, disabled, text }) => {
   return (
     <>
@@ -9,6 +7,5 @@ const SubmitButton = ({ onClick, disabled, text }) => {
     </>
   );
 };
-
 
 export default SubmitButton;
