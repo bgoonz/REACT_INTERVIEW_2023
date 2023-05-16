@@ -1,8 +1,9 @@
 import Input from "./Input";
 import React, { useState } from "react";
-import Button from "./Button";
+import Button from "./UI/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { setFormValues, submitForm, resetForm } from "../store/form-slice";
+
 const Form = () => {
   const dispatch = useDispatch();
   const [buttonDisabled, setButtonDisabled] = useState(true);
@@ -36,26 +37,28 @@ const Form = () => {
 
   return (
     <form onSubmit={handleFormSubmit}>
-      <Input
-        type="text"
-        onChange={handleFirstNameChange}
-        placeholder="First Name"
-        value={firstName}
-      />
-      <Input
-        type="text"
-        onChange={handleLastNameChange}
-        placeholder="Last Name"
-        value={lastName}
-      />
-      <Input
-        type="email"
-        onChange={handleEmailChange}
-        placeholder="Email"
-        value={email}
-      />
+      <div className="input-container">
+        <Input
+          type="text"
+          onChange={handleFirstNameChange}
+          placeholder="First Name"
+          value={firstName}
+        />
+        <Input
+          type="text"
+          onChange={handleLastNameChange}
+          placeholder="Last Name"
+          value={lastName}
+        />
+        <Input
+          type="email"
+          onChange={handleEmailChange}
+          placeholder="Email"
+          value={email}
+        />
+      </div>
       <Button
-        text="Submit"
+        text="Subscribe!"
         onClick={handleFormSubmit}
         disabled={buttonDisabled || isSubmitted}
       />

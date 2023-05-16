@@ -1,9 +1,15 @@
-import React, { useState } from "react";
-
-const Input = ({ value, onChange }) => {
+import React from "react";
+import classes from "./Input.module.css";
+const Input = ({ value, onChange, placeHolder }) => {
   return (
     <div>
-      <input type="text" value={value} onChange={onChange}></input>
+      <input
+        type="text"
+        value={value}
+        onChange={onChange}
+        className={classes.input}
+        placeholder={placeHolder}
+      ></input>
     </div>
   );
 };
