@@ -2,7 +2,7 @@ import "./App.css";
 import Grid from "./components/UI/Grid";
 import Spacer from "./components/UI/Spacer";
 import List from "./components/add-remove-list-items/List";
-import Counter from './components/count-between-one-and-five/Counter';
+import Counter from "./components/count-between-one-and-five/Counter";
 import Parent from "./components/counter/Parent";
 import DisableButton from "./components/disable-button/DisableButton";
 import DisplayInput from "./components/display-input-text/DisplayInput";
@@ -14,7 +14,18 @@ import ParentComponent from "./components/update-parent-state/ParentComponent";
 import { CountContextProvider } from "./context/store";
 
 function App() {
-    const components = [ Counter, Sum, List, FetchComments, Users, Toggle, DisplayInput, DisableButton, ParentComponent, Counter]
+  const components = [
+    Counter,
+    Sum,
+    List,
+    FetchComments,
+    Users,
+    Toggle,
+    DisplayInput,
+    DisableButton,
+    ParentComponent,
+    Counter,
+  ];
   return (
     <div className="App">
       <h1>React Interview Challenges</h1>
@@ -23,7 +34,6 @@ function App() {
       <CountContextProvider>
         <Parent />
       </CountContextProvider>
-     
     </div>
   );
 }

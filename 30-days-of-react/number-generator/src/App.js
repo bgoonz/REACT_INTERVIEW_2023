@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <h1>30 Days Of React</h1>
       <h3>Number Generator</h3>
-      <Grid number={32} />
+      <Grid number={31} />
     </div>
   );
 }

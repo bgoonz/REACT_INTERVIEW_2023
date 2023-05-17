@@ -1,5 +1,5 @@
 import classes from "./Grid.module.css";
-const Grid = ( { components } ) => {
+const Grid = ({ components }) => {
   return (
     <div className={classes["grid-container"]}>
       {components.map((Component, index) => (
@@ -12,4 +12,3 @@ const Grid = ( { components } ) => {
 };
 
 export default Grid;
-

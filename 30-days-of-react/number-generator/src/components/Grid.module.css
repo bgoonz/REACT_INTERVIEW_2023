@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  /* Adjust the number of columns as needed */
+  grid-gap: 0px;
+  /* Adjust the gap between boxes */
+  grid-row-gap: 0;
+}
+
+.grid-item {
+  /* Box background color */
+  padding: 20px;
+  /* Adjust the padding as needed */
+  border: 1px solid #ccc;
+  /* Box border style */
+}
